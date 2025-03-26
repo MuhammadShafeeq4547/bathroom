@@ -1,0 +1,235 @@
+/* Responsive Adjustments */
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    /* Navigation Menu */
+    .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+    }
+
+    .nav-toggle span {
+        width: 100%;
+        height: 3px;
+        background-color: #333;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    /* Our Specialties Section */
+    .specialties-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .specialty-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* What We Offer Section */
+    .services-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* Footer Section */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-contact,
+    .footer-social,
+    .footer-services {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-contact,
+    .footer-social,
+    .footer-services {
+        align-items: center; /* Center align items on smaller screens */
+    }
+
+    .footer-list li {
+        justify-content: center; /* Center align list items on smaller screens */
+    }
+
+    .social-icons {
+        justify-content: center; 
+    }
+}
+
+@media (max-width: 576px) {
+    /* Header Section */
+    .header-image {
+        height: 250px;
+    }
+
+    .welcome-heading {
+        font-size: 28px;
+    }
+
+    .welcome-text {
+        font-size: 14px;
+    }
+
+    /* Slider Section */
+    .slider-container {
+        height: 60vh;
+    }
+
+    .slider-prev,
+    .slider-next {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    /* What We Offer Section */
+    .service-card {
+        padding: 20px;
+    }
+
+    .service-icon {
+        font-size: 30px;
+    }
+
+    .service-title {
+        font-size: 20px;
+    }
+
+    .service-description {
+        font-size: 14px;
+    }
+
+    /* Our Specialties Section */
+    .specialty-card {
+        height: 250px;
+    }
+
+    .specialty-overlay {
+        padding: 15px;
+    }
+
+    .specialty-title {
+        font-size: 20px;
+    }
+
+    .specialty-text {
+        font-size: 14px;
+    }
+}
+
+/* For screens 480px and below */
+@media (max-width: 480px) {
+    /* Header Section */
+    .header-image {
+        height: 200px;
+    }
+
+    .welcome-heading {
+        font-size: 24px;
+    }
+
+    .welcome-text {
+        font-size: 13px;
+    }
+
+    /* Slider Section */
+    .slider-prev,
+    .slider-next {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
+
+    /* What We Offer Section */
+    .service-card {
+        padding: 15px;
+    }
+
+    .service-icon {
+        font-size: 24px;
+    }
+
+    .service-title {
+        font-size: 18px;
+    }
+
+    .service-description {
+        font-size: 13px;
+    }
+
+    /* Our Specialties Section */
+    .specialty-card {
+        height: 200px;
+    }
+
+    .specialty-overlay {
+        padding: 10px;
+    }
+
+    .specialty-title {
+        font-size: 18px;
+    }
+
+    .specialty-text {
+        font-size: 13px;
+    }
+}

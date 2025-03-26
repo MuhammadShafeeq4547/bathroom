@@ -1,0 +1,266 @@
+@media (max-width: 1200px) {
+    .navigation, 
+    .mission-vision-container,
+    .core-values-container,
+    .footer-container {
+        width: 95%;
+    }
+
+    .value-card {
+        height: 550px;
+    }
+}
+@media (max-width: 992px) {
+    .navigation {
+        height: 80px;
+    }
+
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.98);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+        width: 30px;
+        height: 24px;
+        position: relative;
+        z-index: 1001;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .nav-toggle span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: #333;
+        margin: 5px 0;
+        transition: 0.4s;
+        border-radius: 2px;
+    }
+
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .value-card {
+        height: 500px;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .footer-contact,
+    .footer-social,
+    .footer-services {
+        width: 100%;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .header-image {
+        height: 60vh;
+    }
+
+    .intro-heading {
+        font-size: 30px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .mission-vision-card {
+        padding: 30px 20px;
+    }
+
+    .card-icon {
+        font-size: 40px;
+    }
+
+    .mission-vision-heading {
+        font-size: 20px;
+    }
+
+    .core-values-heading {
+        font-size: 30px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .value-card {
+        height: auto;
+        min-height: 450px;
+    }
+}
+@media (max-width: 576px) {
+    .header-image {
+        height: 50vh;
+    }
+
+    .intro-heading {
+        font-size: 26px;
+    }
+
+    .intro-text {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .mission-vision-card {
+        padding: 25px 15px;
+    }
+
+    .mission-vision-text {
+        font-size: 14px;
+    }
+
+    .core-values-heading {
+        font-size: 26px;
+    }
+
+    .value-title {
+        font-size: 20px;
+    }
+
+    .value-text {
+        font-size: 14px;
+    }
+
+    .footer-heading {
+        font-size: 20px;
+    }
+
+    .footer-list li {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+}
+@media (max-width: 420px) {
+    .header-image {
+        height: 40vh;
+    }
+
+    .intro-heading {
+        font-size: 22px;
+    }
+
+    .intro-text {
+        font-size: 14px;
+    }
+
+    .mission-vision-card {
+        padding: 20px 12px;
+    }
+
+    .card-icon {
+        font-size: 35px;
+    }
+
+    .mission-vision-heading {
+        font-size: 18px;
+    }
+
+    .mission-vision-text {
+        font-size: 13px;
+    }
+
+    .core-values-heading {
+        font-size: 22px;
+    }
+
+    .value-card {
+        min-height: 400px;
+    }
+
+    .value-title {
+        font-size: 18px;
+    }
+
+    .value-text {
+        font-size: 13px;
+    }
+
+    .footer-heading {
+        font-size: 18px;
+    }
+
+    .footer-list li {
+        font-size: 13px;
+    }
+}
+@media (max-width: 360px) {
+    .intro-heading {
+        font-size: 20px;
+    }
+
+    .intro-text {
+        font-size: 13px;
+    }
+
+    .mission-vision-heading {
+        font-size: 16px;
+    }
+
+    .mission-vision-text {
+        font-size: 12px;
+    }
+
+    .value-card {
+        min-height: 350px;
+    }
+
+    .value-title {
+        font-size: 16px;
+    }
+
+    .value-text {
+        font-size: 12px;
+    }
+}

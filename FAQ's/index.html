@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ's - Bathroom Renovation Experts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="./media.css">
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <nav class="navigation">
+                <img class="logo" src="./images/logo.jpeg" alt="Company Logo">
+                <div class="nav-toggle" onclick="toggleNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li class="nav-item"><a style="text-decoration: none;" target="_blank" class="nav-item"
+                            href="../Home/index.html">Home</a></li>
+                    <li class="nav-item"><a style="text-decoration: none;" target="_blank" class="nav-item"
+                            href="../portfolio/index.html">Portfolio</a></li>
+                    <li class="nav-item"><a style="text-decoration: none;" target="_blank" class="nav-item"
+                            href="../About us/index.html">About Us</a></li>
+                    <li class="nav-item"><a style="text-decoration: none;" target="_blank" class="nav-item"
+                            href="../FAQ's/index.html">FAQ's</a></li>
+                    <li class="nav-item"><a style="text-decoration: none;" target="_blank" class="nav-item"
+                            href="../Contact Us/index.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-image">
+                <img class="header-img" src="./images/img.28.jpeg" alt="Bathroom Renovation Image">
+            </div>
+        </header>
+        <section class="faq-section">
+            <div class="faq-container">
+                <h2 class="faq-heading">FAQ's</h2>
+                <div class="faq-grid">
+                    <div class="faq-card">
+                        <h3 class="faq-question">What services do you offer?</h3>
+                        <p class="faq-answer">
+                            We provide bathroom renovations, custom designs, plumbing, tiling, and fixture installations.
+                        </p>
+                    </div>
+                    <div class="faq-card">
+                        <h3 class="faq-question">How long does a renovation take?</h3>
+                        <p class="faq-answer">
+                            Most projects take 2-4 weeks, depending on the scope.
+                        </p>
+                    </div>
+                    <div class="faq-card">
+                        <h3 class="faq-question">Do you offer warranties?</h3>
+                        <p class="faq-answer">
+                            Yes, we provide a 5-year workmanship warranty and a 1-year material warranty.
+                        </p>
+                    </div>
+                    <div class="faq-card">
+                        <h3 class="faq-question">Can I customize my design?</h3>
+                        <p class="faq-answer">
+                            Absolutely! We tailor designs to match your style and functional needs.
+                        </p>
+                    </div>
+                    <div class="faq-card">
+                        <h3 class="faq-question">What is your pricing?</h3>
+                        <p class="faq-answer">
+                            Pricing varies by project. We provide a detailed quote after consultation.
+                        </p>
+                    </div>
+                    <div class="faq-card">
+                        <h3 class="faq-question">Do you handle permits?</h3>
+                        <p class="faq-answer">
+                            Yes, we manage all permits and approvals for your renovation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form-section">
+            <div class="form-container">
+                <h2 class="form-heading">Still Have Questions?</h2>
+                <p class="form-text">
+                    If you have more questions, feel free to reach out. We're here to help!
+                </p>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="form-button">Send Message</button>
+                </form>
+                <p id="formMessage" class="form-message"></p>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <ul class="footer-list">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:Info@A10badkamers.nl">Info@A10badkamers.nl</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Annie M.G. Schmidtweg 145, Almere 1321JD</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:0657777366">0657777366</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 class="footer-heading">Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-services">
+                    <h3 class="footer-heading">Our Services</h3>
+                    <ul class="footer-list">
+                        <li><i class="fas fa-tools"></i> Bathroom Renovation</li>
+                        <li><i class="fas fa-pencil-ruler"></i> Custom Designs</li>
+                        <li><i class="fas fa-star"></i> Premium Quality</li>
+                        <li><i class="fas fa-clock"></i> On-Time Delivery</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p class="footer-text">©2023 by Badkamers. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
